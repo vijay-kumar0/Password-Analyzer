@@ -123,9 +123,13 @@ h1 {
   h1 {
     font-size: 20px;
   }
+  body{
+    padding-top: 25px;
+  }
 
   .container {
     padding: 20px;
+    width: 92%;
   }
 }
 
