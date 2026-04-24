@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #020617);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* container */
+.container {
+  width: 90%;
+  max-width: 380px;
+  padding: 28px;
+  border-radius: 24px;
+
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.8),
+    inset 0 0 20px rgba(255,255,255,0.03);
+
+  animation: fadeIn 0.6s ease;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* input */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  border-radius: 16px;
+  padding: 14px;
+  margin-top: 20px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.3s;
+}
+
+.input-group:focus-within {
+  border: 1px solid rgba(59,130,246,0.6);
+  box-shadow: 0 0 12px rgba(59,130,246,0.4);
+}
+
+.input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+#toggle {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* bar */
+.bar {
+  height: 10px;
+  background: #111827;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#strength-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  box-shadow: 0 0 12px currentColor;
+}
+
+/* info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* suggestions */
+#suggestions {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+#suggestions div {
+  margin: 4px 0;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* CREDIT */
+
+.credit {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #e5e7eb;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+/* icon */
+.github-link svg {
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.github-link:hover {
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+/* glow on hover */
+.github-link:hover svg {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(56,189,248,0.6));
+}
