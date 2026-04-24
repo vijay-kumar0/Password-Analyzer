@@ -18,7 +18,9 @@ This project focuses on **clean UI, responsive design, and instant feedback**, s
 
 ---
 
-![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)
+## 🌐 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://Password-Analyzer.netlify.app)
 
 ---
 
