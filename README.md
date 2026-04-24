@@ -74,7 +74,7 @@ It is a **visual estimation** designed to improve user awareness.
 
 ## 📸 Preview
 
-(Add your project screenshot here)
+![Preview](preview.png)
 
 ---
 
